@@ -1,0 +1,5 @@
+To setup the "attack":
+Load the two excutbales onto a USB drive. Then create a text file and name it Notes.txt. You will then create a shortcut to the copy executable and name it Notes.txt.
+You then want to hide the tow executables and the .txt file. All that should be visible is the shortcut. You can change the icon of the shortcut to resemble a text file.
+After this the setup is complete. If a "victim" picks up the USB stick and opens the shortcut, the copy execuatbale will run and copy the keylogger onto the "victims" machine.
+It will then send you back the data when the file hits a certain size.
